@@ -4,44 +4,68 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Impostible</title>
+<title>Credits</title>
 <style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Credits;
+		--web-view-id: Credits;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Credits;
+	}
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-    border: none;
-    overflow: hidden;
+		border: none;
 	}
-	#Home {
+	#Credits {
+		position: absolute;
 		width: 1900px;
 		height: 1080px;
-    background-color: rgba(250,251,251,1);
+		background-color: rgba(250,251,251,1);
+		overflow: hidden;
+		--web-view-name: Credits;
+		--web-view-id: Credits;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
 	}
-	#Image_2 {
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Image_4 {
 		display: none;
 		position: absolute;
 		width: 1920px;
-		height: 1094px;
+		height: 1093px;
 		left: 0px;
-		top: -2px;
+		top: -6.5px;
 		overflow: visible;
 	}
-	.Rectangle_13 {
+	.Rectangle_23 {
 		display: none;
 		position: absolute;
 		overflow: visible;
-		width: 1960px;
-		height: 123px;
-		left: -27px;
-		top: -7px;
+		width: 1920px;
+		height: 94px;
+		left: 0px;
+		top: 0px;
 	}
 	#Box {
 		position: absolute;
 		width: 1943px;
-		height: 116px;
-		left: -11px;
-		top: 0px;
+		height: 109px;
+		left: -23px;
+		top: -19px;
 		overflow: visible;
 	}
 	.Orig_rec {
@@ -49,104 +73,535 @@
 		position: absolute;
 		overflow: visible;
 		width: 1961px;
-		height: 134px;
+		height: 127px;
 		left: 0px;
 		top: 0px;
 	}
-	#Product {
+	#Top_Left_Logo {
 		position: absolute;
-		left: 426px;
-		top: 41px;
+		width: 40px;
+		height: 40px;
+		left: 30px;
+		top: 21px;
 		overflow: visible;
-		width: 79px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(19,34,53,1);
-		letter-spacing: 0.1px;
 	}
-	#Pricing {
+	#Layer_5 {
 		position: absolute;
-		left: 570px;
-		top: 40px;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
 		overflow: visible;
-		width: 68px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(19,34,53,1);
-		letter-spacing: 0.1px;
 	}
-	.Path_4 {
+	#Group_12 {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_11 {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Rectangle_21 {
+		position: absolute;
+		overflow: visible;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	.Rectangle_20 {
+		width: 3.695px;
+		height: 3.375px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(5.263px, 5.263px) matrix(1,0,0,1,12.6841,12.8843) rotate(-18.083deg);
+		transform-origin: center;
+	}
+	.Path_11 {
 		overflow: visible;
 		position: absolute;
-		width: 13.534px;
-		height: 8.66px;
-		left: 514.75px;
-		top: 52.5px;
+		width: 29.033px;
+		height: 28.981px;
+		left: 5.263px;
+		top: 5.263px;
 		transform: matrix(1,0,0,1,0,0);
 	}
-	#Make_the_best_first_impression {
+	#Search_Nav {
 		position: absolute;
-		left: 557px;
-		top: 248px;
+		width: 115px;
+		height: 60px;
+		left: 105px;
+		top: 30px;
 		overflow: visible;
-		width: 809px;
+	}
+	#Group_14 {
+		position: absolute;
+		width: 23.5px;
+		height: 23.5px;
+		left: 6px;
+		top: 1px;
+		overflow: visible;
+	}
+	.Ellipse_7 {
+		position: absolute;
+		overflow: visible;
+		width: 17px;
+		height: 17px;
+		left: 0px;
+		top: 0px;
+	}
+	.Line_5 {
+		overflow: visible;
+		position: absolute;
+		width: 9.707px;
+		height: 9.707px;
+		left: 14.5px;
+		top: 14.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Search {
+		position: absolute;
+		left: 46px;
+		top: 0px;
+		overflow: visible;
+		width: 64px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: Open Sans;
 		font-style: normal;
-		font-weight: normal;
-		font-size: 55px;
-		color: rgba(17,16,16,1);
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(51,51,51,1);
 		letter-spacing: 0.1px;
 	}
-	#Check_Twitter_users_in_seconds {
+	#Rectangle_30 {
+		opacity: 0;
+	}
+	.Rectangle_30 {
 		position: absolute;
-		left: 497px;
-		top: 351px;
 		overflow: visible;
-		width: 929px;
+		width: 115px;
+		height: 3px;
+		left: 0px;
+		top: 57px;
+	}
+	#Credits_Nav {
+		position: absolute;
+		width: 115px;
+		height: 60px;
+		left: 243px;
+		top: 30px;
+		overflow: visible;
+	}
+	#Group_15 {
+		position: absolute;
+		width: 107px;
+		height: 26px;
+		left: 4px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Credits_bd {
+		position: absolute;
+		left: 41px;
+		top: 0px;
+		overflow: visible;
+		width: 67px;
 		white-space: nowrap;
-		line-height: 45px;
-		margin-top: -9px;
+		text-align: left;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(109,218,211,1);
+		letter-spacing: 0.1px;
+	}
+	.Path_38 {
+		overflow: visible;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 1px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_37 {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 4px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Rectangle_31 {
+		position: absolute;
+		overflow: visible;
+		width: 115px;
+		height: 3px;
+		left: 0px;
+		top: 57px;
+	}
+	#Component_13___3 {
+		position: absolute;
+		width: 115px;
+		height: 60px;
+		left: 390px;
+		top: 30px;
+		overflow: visible;
+	}
+	#Group_16 {
+		position: absolute;
+		width: 113px;
+		height: 26px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Settings {
+		position: absolute;
+		left: 38px;
+		top: 0px;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(51,51,51,1);
+		letter-spacing: 0.1px;
+	}
+	#icon_settings {
+		position: absolute;
+		width: 18.752px;
+		height: 18.752px;
+		left: 0px;
+		top: 4px;
+		overflow: visible;
+	}
+	.ellipse {
+		position: absolute;
+		overflow: visible;
+		width: 9.089px;
+		height: 9.089px;
+		left: 5.331px;
+		top: 5.331px;
+	}
+	.path {
+		overflow: visible;
+		position: absolute;
+		width: 19.752px;
+		height: 19.752px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_32 {
+		opacity: 0;
+	}
+	.Rectangle_32 {
+		position: absolute;
+		overflow: visible;
+		width: 115px;
+		height: 3px;
+		left: 0px;
+		top: 57px;
+	}
+	#impostible_tag_only_small {
+		position: absolute;
+		width: 54px;
+		height: 54px;
+		left: 25px;
+		top: 14px;
+		overflow: visible;
+	}
+	#Drop_Down_Profile {
+		position: absolute;
+		width: 368px;
+		height: 236px;
+		left: 1600px;
+		top: -146px;
+		overflow: visible;
+	}
+	#Group_35 {
+		opacity: 0;
+		position: absolute;
+		width: 311px;
+		height: 233px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Box_br {
+		opacity: 0.92;
+		position: absolute;
+		width: 311px;
+		height: 92px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Orig_rec_bs {
+		filter: drop-shadow(0px 1px 6px rgba(18, 34, 53, 0.2));
+		position: absolute;
+		overflow: visible;
+		width: 329px;
+		height: 110px;
+		left: 0px;
+		top: 0px;
+	}
+	#Available_Credits {
+		position: absolute;
+		left: 21px;
+		top: 13px;
+		overflow: visible;
+		width: 271px;
+		height: 22px;
+		text-align: left;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(112,112,112,1);
+	}
+	.Rectangle_467 {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 25px;
+		left: 21px;
+		top: 54px;
+	}
+	#Add_Credits {
+		position: absolute;
+		left: 20px;
+		top: 59px;
+		overflow: hidden;
+		width: 272px;
+		height: 16px;
 		text-align: center;
 		font-family: Open Sans;
 		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#ID21 {
+		position: absolute;
+		left: 146px;
+		top: 13px;
+		overflow: visible;
+		width: 146px;
+		height: 22px;
+		text-align: right;
+		font-family: Open Sans;
+		font-style: normal;
 		font-weight: normal;
-		font-size: 27px;
-		color: rgba(85,85,85,1);
+		font-size: 15px;
+		color: rgba(191,191,191,1);
 	}
-	#Group_6 {
+	#Component_41___1 {
 		position: absolute;
-		width: 122px;
-		height: 59px;
-		left: 1662px;
-		top: 27px;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 93px;
 		overflow: visible;
-		--web-animation: fadein 0s snap;
-		--web-action-type: page;
-		--web-action-target: Sign_Up_1.html;
-		cursor: pointer;
 	}
-	.Rectangle_14 {
+	#Group_31 {
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Box_bz {
+		opacity: 0.92;
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Orig_rec_b {
+		filter: drop-shadow(0px 1px 6px rgba(18, 34, 53, 0.2));
 		position: absolute;
 		overflow: visible;
-		width: 122px;
-		height: 59px;
+		width: 329px;
+		height: 64px;
 		left: 0px;
 		top: 0px;
 	}
-	#Sign_up {
+	#Review_Searches {
 		position: absolute;
-		left: 26px;
-		top: 16px;
+		left: 21px;
+		top: 12px;
+		overflow: visible;
+		width: 271px;
+		height: 22px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: My_Searches_page_1.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(112,112,112,1);
+	}
+	#Mask_Group_1 {
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Component_41___1_b {
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 140px;
+		overflow: visible;
+	}
+	#Group_31_b {
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Box_b {
+		opacity: 0.92;
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Orig_rec_cb {
+		filter: drop-shadow(0px 1px 6px rgba(18, 34, 53, 0.2));
+		position: absolute;
+		overflow: visible;
+		width: 329px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+	}
+	#Settings_b {
+		position: absolute;
+		left: 21px;
+		top: 12px;
+		overflow: visible;
+		width: 271px;
+		height: 22px;
+		text-align: left;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(112,112,112,1);
+	}
+	#Mask_Group_1_ca {
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Component_41___1_cd {
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 187px;
+		overflow: visible;
+	}
+	#Group_31_ce {
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Box_cf {
+		opacity: 0.92;
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Orig_rec_cg {
+		filter: drop-shadow(0px 1px 6px rgba(18, 34, 53, 0.2));
+		position: absolute;
+		overflow: visible;
+		width: 329px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+	}
+	#Log_Out {
+		position: absolute;
+		left: 21px;
+		top: 12px;
+		overflow: visible;
+		width: 271px;
+		height: 22px;
+		text-align: left;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(112,112,112,1);
+	}
+	#Mask_Group_1_ci {
+		position: absolute;
+		width: 311px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Rectangle_28 {
+		position: absolute;
+		overflow: visible;
+		width: 346px;
+		height: 129px;
+		left: 22px;
+		top: 107px;
+	}
+	.Ellipse_10 {
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		height: 50px;
+		left: 53px;
+		top: 162px;
+	}
+	#John_Doe {
+		position: absolute;
+		left: 128px;
+		top: 176px;
 		overflow: visible;
 		width: 77px;
 		white-space: nowrap;
@@ -154,217 +609,43 @@
 		font-family: Open Sans;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 21px;
-		color: rgba(255,255,255,1);
+		font-size: 17px;
+		color: rgba(112,112,112,1);
 		letter-spacing: 0.1px;
 	}
-	#Group_8 {
+	#Down_arrow_small {
 		position: absolute;
-		width: 963px;
-		height: 254px;
-		left: 479px;
-		top: 497px;
+		width: 12.4px;
+		height: 7.1px;
+		left: 237px;
+		top: 185px;
 		overflow: visible;
 	}
-	.Rectangle_15 {
-		filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.2));
-		position: absolute;
+	.Path_36 {
 		overflow: visible;
-		width: 999px;
-		height: 290px;
+		position: absolute;
+		width: 12.4px;
+		height: 7.1px;
 		left: 0px;
 		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
 	}
-	#Enter_a_username_or_url_to_lau {
+	.Ellipse_13 {
 		position: absolute;
-		left: 55px;
-		top: 162px;
 		overflow: visible;
-		width: 623px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(85,85,85,1);
-		letter-spacing: 0.1px;
+		width: 13px;
+		height: 13px;
+		left: 92px;
+		top: 161px;
 	}
-	#Group_7 {
-		position: absolute;
-		width: 851px;
-		height: 76px;
-		left: 56px;
-		top: 56px;
+	.Line_7 {
 		overflow: visible;
-	}
-	.Rectangle_16 {
 		position: absolute;
-		overflow: visible;
-		width: 851px;
-		height: 76px;
-		left: 0px;
-		top: 0px;
-	}
-	.Rectangle_17 {
-		position: absolute;
-		overflow: visible;
-		width: 253px;
-		height: 76px;
-		left: 598px;
-		top: 0px;
-		--web-animation: fadein 0s snap;
-		--web-action-type: page;
-		--web-action-target: Sign_In.html;
-		cursor: pointer;
-	}
-	#Search_Twitter {
-		position: absolute;
-		left: 650px;
-		top: 24px;
-		overflow: visible;
-		width: 150px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 21px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 0.1px;
-	}
-	#_Coach_GrantJr {
-		position: absolute;
-		left: 75px;
-		top: 78px;
-		overflow: visible;
-		width: 178px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 23px;
-		color: rgba(85,85,85,1);
-		letter-spacing: 0.1px;
-  }
-  /* Navigation */
-.navbar{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar-links ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-.navbar-links li{
-    list-style: none;
-}
-.navbar-links li a{
-    text-decoration: none;
-    color: #333;
-    padding: 1rem;
-    display: block;
-}
-.navbar-links li:hover {
-    background-color: #F0E9D7;
-}
-.toggle-button{
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
-@media (max-width: 672px) {
-    .toggle-button {
-        display:flex;
-    }
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar-links li {
-        text-align: center;
-    }
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar-links.active{
-        display:flex;
-    }
-}
-	#nav {
-		position: absolute;
-		width: 562px;
-		height: 50px;
-		left: -179px;
-		top: 28px;
-		overflow: visible;
-  }
-  
-  
-	.Rectangle_18 {
-		position: absolute;
-		overflow: visible;
-		width: 562px;
-		height: 50px;
-		left: 0px;
-		top: 0px;
-	}
-	#Impostible_Logo_BUTTONStraight {
-		position: absolute;
-		width: 248px;
-		height: 45px;
-		left: 311px;
-		top: 3px;
-		overflow: visible;
-	}
-	#Component_26___1 {
-		position: absolute;
-		width: 66px;
-		height: 28px;
-		left: 1548px;
-		top: 43px;
-		overflow: visible;
-	}
-	#Sign_in {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 67px;
-		white-space: nowrap;
-		--web-animation: fadein 0s snap;
-		--web-action-type: page;
-		--web-action-target: Sign_In.html;
-		cursor: pointer;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(85,85,85,1);
-		letter-spacing: 0.1px;
+		width: 1px;
+		height: 89px;
+		left: 1621.5px;
+		top: 0.5px;
+		transform: matrix(1,0,0,1,0,0);
 	}
 </style>
 <script id="applicationScript">
@@ -2791,103 +3072,209 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Home">
-
-	<img id="Image_2" src="Image_2.png" srcset="Image_2.png 1x, Image_2@2x.png 2x">
-	<svg class="Rectangle_13">
-		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_13" rx="0" ry="0" x="0" y="0" width="1960" height="123">
+<div id="Credits">
+	<img id="Image_4" src="Image_4.png" srcset="Image_4.png 1x, Image_4@2x.png 2x">
+	<svg class="Rectangle_23">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_23" rx="0" ry="0" x="0" y="0" width="1920" height="94">
 		</rect>
 	</svg>
 	<div id="Box" class="Box">
 		<svg class="Orig_rec">
-			<rect fill="rgba(255,255,255,1)" id="Orig_rec" rx="10" ry="10" x="0" y="0" width="1943" height="116">
+			<rect fill="rgba(255,255,255,1)" id="Orig_rec" rx="10" ry="10" x="0" y="0" width="1943" height="109">
 			</rect>
 		</svg>
 	</div>
-	<div id="Product">
-		<span>Product</span>
-	</div>
-	<div id="Pricing">
-		<span>Pricing</span>
-	</div>
-	<svg class="Path_4" viewBox="2596.75 55.5 11 4.5">
-		<path fill="transparent" stroke="rgba(112,112,112,1)" stroke-width="4px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_4" d="M 2596.75 55.5 L 2602.5 60 L 2607.75 55.5">
-		</path>
-	</svg>
-	<div id="Make_the_best_first_impression">
-		<span>Make the best first impression.</span>
-	</div>
-	<div id="Check_Twitter_users_in_seconds">
-		<span>Check Twitter users in seconds for profanity. From vetting potential hires, <br/>to cleaning up your own social presence, use Impostible. </span>
-	</div>
-	<div onclick="application.goToTargetView(event)" id="Group_6">
-		<svg class="Rectangle_14">
-			<rect fill="rgba(109,218,211,1)" id="Rectangle_14" rx="11" ry="11" x="0" y="0" width="122" height="59">
-			</rect>
-		</svg>
-		<div id="Sign_up">
-			<span>Sign up</span>
-		</div>
-	</div>
-	<div id="Group_8">
-		<svg class="Rectangle_15">
-			<rect fill="rgba(255,255,255,1)" id="Rectangle_15" rx="16" ry="16" x="0" y="0" width="963" height="254">
-			</rect>
-		</svg>
-		<div id="Enter_a_username_or_url_to_lau">
-			<span>Enter a username or url to launch. For example, @Normaleellc</span>
-		</div>
-		<div id="Group_7">
-			<svg class="Rectangle_16">
-				<rect fill="rgba(255,255,255,1)" stroke="rgba(109,218,211,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_16" rx="13" ry="13" x="0" y="0" width="851" height="76">
-				</rect>
-			</svg>
-			<svg class="Rectangle_17">
-				<rect fill="rgba(109,218,211,1)" stroke="rgba(109,218,211,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" onclick="application.goToTargetView(event)" id="Rectangle_17" rx="13" ry="13" x="0" y="0" width="253" height="76">
-				</rect>
-			</svg>
-			<div id="Search_Twitter">
-				<span>Search Twitter</span>
+	<div id="Top_Left_Logo">
+		<div id="Layer_5">
+			<div id="Group_12">
+				<div id="Group_11">
+					<svg class="Rectangle_21">
+						<rect fill="rgba(19,34,53,1)" id="Rectangle_21" rx="7" ry="7" x="0" y="0" width="40" height="40">
+						</rect>
+					</svg>
+					<svg class="Rectangle_20">
+						<rect fill="rgba(109,218,211,1)" id="Rectangle_20" rx="0" ry="0" x="0" y="0" width="3.695" height="3.375">
+						</rect>
+					</svg>
+					<svg class="Path_11" viewBox="33 48.959 29.032 28.981">
+						<path fill="rgba(109,218,211,1)" id="Path_11" d="M 61.60564041137695 62.69434356689453 L 59.77161407470703 56.45816421508789 C 58.1445426940918 50.92565155029297 52.34054565429688 47.7591667175293 46.80772399902344 49.38623046875 L 40.49910736083984 51.24156951904297 C 34.96628570556641 52.86863327026367 31.80010604858398 58.67293548583984 33.42717361450195 64.20576477050781 L 35.26089859008789 70.44163513183594 C 36.88796997070313 75.97446441650391 42.6922721862793 79.14094543457031 48.22509765625 77.51387786865234 L 54.53370666503906 75.65855407714844 C 60.06653213500977 74.03147125244141 63.23271179199219 68.2271728515625 61.60564041137695 62.69434356689453 Z M 55.68902969360352 66.08513641357422 L 53.78013229370117 66.70845031738281 L 54.41622924804688 68.6572265625 C 54.68253707885742 69.47257232666016 54.23727035522461 70.34942626953125 53.42190933227539 70.61572265625 C 52.60654449462891 70.88172912597656 51.72970962524414 70.436767578125 51.46340179443359 69.62110900878906 L 50.82730102539063 67.67263793945313 L 47.31508255004883 68.81944274902344 L 47.94843292236328 70.75907135009766 C 48.21474456787109 71.57444000244141 47.76947784423828 72.45127868652344 46.95411682128906 72.71759033203125 C 46.13845443725586 72.98389434814453 45.26161575317383 72.53862762451172 44.99560928344727 71.7232666015625 L 44.36225509643555 69.7833251953125 L 42.48074722290039 70.39781188964844 C 41.62186431884766 70.67812347412109 40.69845962524414 70.2091064453125 40.41784286499023 69.35022735595703 L 40.41784286499023 69.35022735595703 C 40.13753509521484 68.49134826660156 40.60654449462891 67.56793975830078 41.46542358398438 67.28733062744141 L 43.34663009643555 66.67314910888672 L 42.29904556274414 63.46466064453125 L 40.37888717651367 64.09132385253906 C 39.52000427246094 64.37194061279297 38.59629821777344 63.90293121337891 38.31598663330078 63.04405212402344 C 38.03537368774414 62.18516540527344 38.5043830871582 61.26176071166992 39.36326599121094 60.98114776611328 L 41.28342437744141 60.35418319702148 L 40.63150405883789 58.35792922973633 C 40.36519241333008 57.54257202148438 40.81045913696289 56.66543197631836 41.62582397460938 56.3994255065918 L 41.62582397460938 56.3994255065918 C 42.44117736816406 56.13311767578125 43.31801986694336 56.57837677001953 43.58432769775391 57.39374542236328 L 44.23624801635742 59.38999176025391 L 47.74847793579102 58.24319458007813 L 47.09928894042969 56.25577163696289 C 46.83329010009766 55.44041442871094 47.27825546264648 54.56357192993164 48.09391403198242 54.29726409912109 L 48.09391403198242 54.29726409912109 C 48.90927505493164 54.03095626831055 49.78611755371094 54.47622299194336 50.05242538452148 55.29158020019531 L 50.7013053894043 57.27931213378906 L 52.57124710083008 56.66847229003906 C 53.43012619018555 56.38816452026367 54.35383224487305 56.85717391967773 54.6341438293457 57.7160530090332 C 54.91476058959961 58.5749397277832 54.44575119018555 59.49834060668945 53.58686828613281 59.77895736694336 L 51.7169303894043 60.38948440551758 L 52.76451110839844 63.59796905517578 L 54.67340469360352 62.97496032714844 C 55.53228759765625 62.69434356689453 56.45569229125977 63.16336059570313 56.73630523681641 64.02223968505859 C 57.01662063598633 64.88111877441406 56.54791641235352 65.80451965332031 55.68902969360352 66.08513641357422 Z">
+						</path>
+					</svg>
+				</div>
 			</div>
 		</div>
-		<div id="_Coach_GrantJr">
-			<span>@Coach_GrantJr</span>
+	</div>
+	<div id="Search_Nav" class="Search_Nav">
+		<div id="Group_14">
+			<svg class="Ellipse_7">
+				<ellipse fill="transparent" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_7" rx="8.5" ry="8.5" cx="8.5" cy="8.5">
+				</ellipse>
+			</svg>
+			<svg class="Line_5" viewBox="0 0 9 9">
+				<path fill="transparent" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_5" d="M 9 9 L 0 0">
+				</path>
+			</svg>
 		</div>
-  </div>
-
-  <nav id="nav" class="nav">
-		<svg class="Rectangle_18">
-			<rect fill="rgba(19,34,53,1)" stroke="rgba(19,34,53,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_18" rx="25" ry="25" x="0" y="0" width="562" height="50">
+		<div id="Search">
+			<span>Search</span>
+		</div>
+		<svg class="Rectangle_30">
+			<rect fill="rgba(112,112,112,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_30" rx="0" ry="0" x="0" y="0" width="115" height="3">
 			</rect>
 		</svg>
-		<img id="Impostible_Logo_BUTTONStraight" src="images/logo.png">
-  </div>
-  <a href="#" class="toggle-button">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-</a>
-  <div class="navbar-links">
-    <ul>
-      <li>
-        <a href="">Garden Center</a>
-      </li>
-      <li>
-        <a href="">Services</a>
-      </li>
-      <li>
-        <a href="">Blog</a>
-      </li>
-      <li>
-        <div id="Component_26___1" class="Component_26___1">
-          <div onclick="application.goToTargetView(event)" id="Sign_in">
-            <span>Sign in</span>
-          </div>
-        </div>
-      </li>
-    </ul>
+	</div>
+	<div id="Credits_Nav" class="Credits_Nav">
+		<div id="Group_15">
+			<div id="Credits_bd">
+				<span>Credits</span>
+			</div>
+			<svg class="Path_38" viewBox="0 0 24 24">
+				<path fill="rgba(255,255,255,1)" stroke="rgba(109,218,211,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_38" d="M 12 0 C 18.62741661071777 0 24 5.372583389282227 24 12 C 24 18.62741661071777 18.62741661071777 24 12 24 C 5.372583389282227 24 0 18.62741661071777 0 12 C 0 5.372583389282227 5.372583389282227 0 12 0 Z">
+				</path>
+			</svg>
+			<svg class="Path_37" viewBox="0 0 16 16">
+				<path fill="rgba(255,255,255,1)" stroke="rgba(109,218,211,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_37" d="M 8 0 C 12.41827774047852 0 16 3.581722259521484 16 8 C 16 12.41827774047852 12.41827774047852 16 8 16 C 3.581722259521484 16 0 12.41827774047852 0 8 C 0 3.581722259521484 3.581722259521484 0 8 0 Z">
+				</path>
+			</svg>
+		</div>
+		<svg class="Rectangle_31">
+			<rect fill="rgba(109,218,211,1)" stroke="rgba(109,218,211,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_31" rx="0" ry="0" x="0" y="0" width="115" height="3">
+			</rect>
+		</svg>
+	</div>
+	<div id="Component_13___3" class="Component_13___3">
+		<div id="Group_16">
+			<div id="Settings">
+				<span>Settings</span>
+			</div>
+			<div id="icon_settings" class="icon_settings">
+				<svg class="ellipse">
+					<ellipse fill="rgba(0,0,0,0)" stroke="rgba(116,138,157,1)" stroke-width="1px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="ellipse" rx="4.04473352432251" ry="4.04473352432251" cx="4.04473352432251" cy="4.04473352432251">
+					</ellipse>
+				</svg>
+				<svg class="path" viewBox="285.139 756.742 18.752 18.752">
+					<path fill="rgba(0,0,0,0)" stroke="rgba(116,138,157,1)" stroke-width="1px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="path" d="M 303.8909912109375 766.9335327148438 L 303.8909912109375 765.3033447265625 C 303.8909912109375 764.8947143554688 303.5599365234375 764.5645141601563 303.1521911621094 764.5645141601563 L 302.2763061523438 764.5645141601563 C 301.9504699707031 764.5645141601563 301.6495666503906 764.359375 301.5573120117188 764.0473022460938 C 301.3616333007813 763.3834838867188 301.0736999511719 762.7610473632813 300.7098999023438 762.1903686523438 C 300.5280151367188 761.9041137695313 300.5805969238281 761.5291137695313 300.8202514648438 761.2894897460938 L 300.8202514648438 761.2894897460938 C 301.1081848144531 761.0006713867188 301.1081848144531 760.533447265625 300.8202514648438 760.24462890625 L 300.3883666992188 759.8135986328125 C 300.0995788574219 759.5247802734375 299.6322937011719 759.5247802734375 299.343505859375 759.8135986328125 L 299.343505859375 759.8135986328125 C 299.1047058105469 760.0523681640625 298.7288513183594 760.1058349609375 298.4434814453125 759.923095703125 C 297.872802734375 759.559326171875 297.24951171875 759.2713623046875 296.585693359375 759.0765380859375 C 296.2736206054688 758.9843139648438 296.0684509277344 758.6834106445313 296.0684509277344 758.356689453125 L 296.0684509277344 757.4808349609375 C 296.0684509277344 757.0730590820313 295.73828125 756.7420043945313 295.3305053710938 756.7420043945313 L 293.699462890625 756.7420043945313 C 293.2917175292969 756.7420043945313 292.9615478515625 757.0730590820313 292.9615478515625 757.4808349609375 L 292.9615478515625 758.356689453125 C 292.9615478515625 758.6834106445313 292.75634765625 758.9843139648438 292.4442749023438 759.0756225585938 C 291.7804565429688 759.2713623046875 291.1571960449219 759.559326171875 290.5864868164063 759.923095703125 C 290.3011474609375 760.1058349609375 289.92529296875 760.0523681640625 289.6864929199219 759.8135986328125 L 289.6864929199219 759.8135986328125 C 289.397705078125 759.5247802734375 288.930419921875 759.5247802734375 288.6416320800781 759.8135986328125 L 288.209716796875 760.24462890625 C 287.9218139648438 760.533447265625 287.9218139648438 761.0006713867188 288.209716796875 761.2894897460938 L 288.209716796875 761.2894897460938 C 288.4494018554688 761.5291137695313 288.5019836425781 761.9041137695313 288.3200988769531 762.1903686523438 C 287.956298828125 762.7610473632813 287.6683349609375 763.3834838867188 287.47265625 764.0473022460938 C 287.3804321289063 764.359375 287.0795593261719 764.5645141601563 286.753662109375 764.5645141601563 L 285.8778076171875 764.5645141601563 C 285.4700622558594 764.5645141601563 285.1390075683594 764.8947143554688 285.1390075683594 765.3033447265625 L 285.1390075683594 766.9335327148438 C 285.1390075683594 767.34130859375 285.4700622558594 767.67236328125 285.8778076171875 767.67236328125 L 286.753662109375 767.67236328125 C 287.0795593261719 767.67236328125 287.3804321289063 767.8766479492188 287.47265625 768.1895751953125 C 287.6683349609375 768.8525390625 287.956298828125 769.475830078125 288.3200988769531 770.0465087890625 C 288.5019836425781 770.3318481445313 288.4494018554688 770.707763671875 288.209716796875 770.9473876953125 L 288.209716796875 770.9473876953125 C 287.9218139648438 771.2353515625 287.9218139648438 771.7034301757813 288.209716796875 771.9913940429688 L 288.6416320800781 772.4232788085938 C 288.930419921875 772.7120971679688 289.397705078125 772.711181640625 289.6864929199219 772.4232788085938 L 289.6864929199219 772.4232788085938 C 289.92529296875 772.18359375 290.3011474609375 772.1310424804688 290.5864868164063 772.3129272460938 C 291.1571960449219 772.6767578125 291.7804565429688 772.9646606445313 292.4442749023438 773.1603393554688 C 292.75634765625 773.2525634765625 292.9615478515625 773.553466796875 292.9615478515625 773.8793334960938 L 292.9615478515625 774.7552490234375 C 292.9615478515625 775.1638793945313 293.2917175292969 775.4940185546875 293.699462890625 775.4940185546875 L 295.3305053710938 775.4940185546875 C 295.73828125 775.4940185546875 296.0684509277344 775.1638793945313 296.0684509277344 774.7552490234375 L 296.0684509277344 773.8793334960938 C 296.0684509277344 773.553466796875 296.2736206054688 773.2525634765625 296.585693359375 773.1603393554688 C 297.24951171875 772.9646606445313 297.872802734375 772.6767578125 298.4434814453125 772.3129272460938 C 298.7288513183594 772.1310424804688 299.1047058105469 772.18359375 299.343505859375 772.4232788085938 L 299.343505859375 772.4232788085938 C 299.6322937011719 772.711181640625 300.0995788574219 772.711181640625 300.3883666992188 772.4232788085938 L 300.8202514648438 771.9913940429688 C 301.1081848144531 771.7034301757813 301.1081848144531 771.2353515625 300.8202514648438 770.9473876953125 L 300.8202514648438 770.9473876953125 C 300.5805969238281 770.707763671875 300.5280151367188 770.3318481445313 300.7098999023438 770.0465087890625 C 301.0736999511719 769.475830078125 301.3616333007813 768.8525390625 301.5573120117188 768.1895751953125 C 301.6495666503906 767.8766479492188 301.9504699707031 767.67236328125 302.2763061523438 767.67236328125 L 303.1521911621094 767.67236328125 C 303.5599365234375 767.67236328125 303.8909912109375 767.34130859375 303.8909912109375 766.9335327148438 Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<svg class="Rectangle_32">
+			<rect fill="rgba(112,112,112,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_32" rx="0" ry="0" x="0" y="0" width="115" height="3">
+			</rect>
+		</svg>
+	</div>
+	<img id="impostible_tag_only_small" src="images/small_logo.png">
+	<div id="Drop_Down_Profile" class="Drop_Down_Profile">
+		<div id="Group_35">
+			<div id="Box_br" class="Box">
+				<svg class="Orig_rec_bs">
+					<rect fill="rgba(255,255,255,1)" id="Orig_rec_bs" rx="2" ry="2" x="0" y="0" width="311" height="92">
+					</rect>
+				</svg>
+			</div>
+			<div id="Available_Credits">
+				<span>Available Credits</span>
+			</div>
+			<svg class="Rectangle_467">
+				<rect fill="rgba(109,218,211,1)" id="Rectangle_467" rx="7" ry="7" x="0" y="0" width="270" height="25">
+				</rect>
+			</svg>
+			<div id="Add_Credits">
+				<span>Add Credits</span>
+			</div>
+			<div id="ID21">
+				<span>21</span>
+			</div>
+			<div id="Component_41___1" class="Component_41___1">
+				<div id="Group_31">
+					<div id="Box_bz" class="Box">
+						<svg class="Orig_rec_b">
+							<rect fill="rgba(255,255,255,1)" id="Orig_rec_b" rx="2" ry="2" x="0" y="0" width="311" height="46">
+							</rect>
+						</svg>
+					</div>
+					<div onclick="application.goToTargetView(event)" id="Review_Searches">
+						<span>Review Searches</span>
+					</div>
+				</div>
+				<div id="Mask_Group_1">
+				<svg style="width:inherit;height:inherit;overflow:visible;">
+					<rect fill="url(#Mask_Group_1_cs_pattern)" width="100%" height="100%"></rect>
+						<pattern elementId="Mask_Group_1_cs" id="Mask_Group_1_cs_pattern" x="0" y="0" width="100%" height="100%">
+							<image x="0" y="0" width="100%" height="100%" href="Mask_Group_1_cs_pattern.png" xlink:href="Mask_Group_1_cs_pattern.png"></image>
+						</pattern>
+						</svg>
+					</div>
+			</div>
+			<div id="Component_41___1_b" class="Component_41___1">
+				<div id="Group_31_b">
+					<div id="Box_b" class="Box">
+						<svg class="Orig_rec_cb">
+							<rect fill="rgba(255,255,255,1)" id="Orig_rec_cb" rx="2" ry="2" x="0" y="0" width="311" height="46">
+							</rect>
+						</svg>
+					</div>
+					<div id="Settings_b">
+						<span>Settings</span>
+					</div>
+				</div>
+				<div id="Mask_Group_1_ca">
+				<svg style="width:inherit;height:inherit;overflow:visible;">
+					<rect fill="url(#Mask_Group_1_ct_pattern)" width="100%" height="100%"></rect>
+						<pattern elementId="Mask_Group_1_ct" id="Mask_Group_1_ct_pattern" x="0" y="0" width="100%" height="100%">
+							<image x="0" y="0" width="100%" height="100%" href="Mask_Group_1_ct_pattern.png" xlink:href="Mask_Group_1_ct_pattern.png"></image>
+						</pattern>
+						</svg>
+					</div>
+			</div>
+			<div id="Component_41___1_cd" class="Component_41___1">
+				<div id="Group_31_ce">
+					<div id="Box_cf" class="Box">
+						<svg class="Orig_rec_cg">
+							<rect fill="rgba(255,255,255,1)" id="Orig_rec_cg" rx="2" ry="2" x="0" y="0" width="311" height="46">
+							</rect>
+						</svg>
+					</div>
+					<div id="Log_Out">
+						<span>Log Out</span>
+					</div>
+				</div>
+				<div id="Mask_Group_1_ci">
+				<svg style="width:inherit;height:inherit;overflow:visible;">
+					<rect fill="url(#Mask_Group_1_cu_pattern)" width="100%" height="100%"></rect>
+						<pattern elementId="Mask_Group_1_cu" id="Mask_Group_1_cu_pattern" x="0" y="0" width="100%" height="100%">
+							<image x="0" y="0" width="100%" height="100%" href="Mask_Group_1_cu_pattern.png" xlink:href="Mask_Group_1_cu_pattern.png"></image>
+						</pattern>
+						</svg>
+					</div>
+			</div>
+		</div>
+		<svg class="Rectangle_28">
+			<rect fill="rgba(255,255,255,1)" id="Rectangle_28" rx="0" ry="0" x="0" y="0" width="346" height="129">
+			</rect>
+		</svg>
+		<svg class="Ellipse_10">
+			<ellipse fill="rgba(191,191,191,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_10" rx="25" ry="25" cx="25" cy="25">
+			</ellipse>
+		</svg>
+		<div id="John_Doe">
+			<span>John Doe</span>
+		</div>
+		<div id="Down_arrow_small" class="Down_arrow_small">
+			<svg class="Path_36" viewBox="2 2 12.4 7.1">
+				<path fill="rgba(191,191,191,1)" id="Path_36" d="M 8.19999885559082 9.100001335144043 L 1.99999988079071 3.629508495330811 L 3.846808433532715 2 L 8.19999885559082 5.840983867645264 L 12.55319118499756 2 L 14.39999866485596 3.629508495330811 L 8.19999885559082 9.100001335144043 Z">
+				</path>
+			</svg>
+		</div>
+		<svg class="Ellipse_13">
+			<ellipse fill="rgba(109,218,211,1)" stroke="rgba(109,218,211,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_13" rx="6.5" ry="6.5" cx="6.5" cy="6.5">
+			</ellipse>
+		</svg>
+	</div>
+	<svg class="Line_7" viewBox="0 0 1 89">
+		<path fill="transparent" stroke="rgba(191,191,191,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_7" d="M 0 0 L 0 89">
+		</path>
+	</svg>
 </div>
-</nav>
-
 </body>
 </html>

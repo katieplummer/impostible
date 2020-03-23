@@ -4,43 +4,126 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Impostible</title>
+<title>Sign In</title>
 <style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Sign In;
+		--web-view-id: Sign_In;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Sign_In;
+	}
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-    border: none;
-    overflow: hidden;
+		border: none;
 	}
-	#Home {
+	#Sign_In {
+		position: absolute;
 		width: 1900px;
 		height: 1080px;
-    background-color: rgba(250,251,251,1);
+		background-color: rgba(250,251,251,1);
+		overflow: hidden;
+		--web-view-name: Sign In;
+		--web-view-id: Sign_In;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
 	}
-	#Image_2 {
+	@keyframes  {
+	
+	
+	}
+	#Image_3 {
 		display: none;
 		position: absolute;
-		width: 1920px;
-		height: 1094px;
-		left: 0px;
-		top: -2px;
+		width: 1909px;
+		height: 1080px;
+		left: 6px;
+		top: 0px;
 		overflow: visible;
 	}
-	.Rectangle_13 {
-		display: none;
+	#Welcome_Back {
 		position: absolute;
+		left: 836px;
+		top: 208px;
 		overflow: visible;
-		width: 1960px;
-		height: 123px;
-		left: -27px;
-		top: -7px;
+		width: 249px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(51,51,51,1);
+		letter-spacing: 0.05px;
+	}
+	#Don_t__have_an_account_ {
+		position: absolute;
+		left: 1457px;
+		top: 51px;
+		overflow: visible;
+		width: 225px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(85,85,85,1);
+		letter-spacing: 0.05px;
+	}
+	#Sign_up_ {
+		position: absolute;
+		left: 1698px;
+		top: 51px;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		--web-animation: fadein 0s snap;
+		--web-action-type: page;
+		--web-action-target: Sign_Up_1.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(85,85,85,1);
+		letter-spacing: 0.05px;
+		text-decoration: true;
+	}
+	#Forgot_your_password_ {
+		position: absolute;
+		left: 861px;
+		top: 918px;
+		overflow: visible;
+		width: 216px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(191,191,191,1);
+		letter-spacing: 0.05px;
+		text-decoration: true;
+	}
+	#Sign_in_box {
+		position: absolute;
+		width: 844px;
+		height: 573px;
+		left: 538px;
+		top: 285px;
+		overflow: visible;
 	}
 	#Box {
 		position: absolute;
-		width: 1943px;
-		height: 116px;
-		left: -11px;
+		width: 844px;
+		height: 573px;
+		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
@@ -48,182 +131,29 @@
 		filter: drop-shadow(0px 1px 6px rgba(18, 34, 53, 0.2));
 		position: absolute;
 		overflow: visible;
-		width: 1961px;
-		height: 134px;
-		left: 0px;
-		top: 0px;
-	}
-	#Product {
-		position: absolute;
-		left: 426px;
-		top: 41px;
-		overflow: visible;
-		width: 79px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(19,34,53,1);
-		letter-spacing: 0.1px;
-	}
-	#Pricing {
-		position: absolute;
-		left: 570px;
-		top: 40px;
-		overflow: visible;
-		width: 68px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(19,34,53,1);
-		letter-spacing: 0.1px;
-	}
-	.Path_4 {
-		overflow: visible;
-		position: absolute;
-		width: 13.534px;
-		height: 8.66px;
-		left: 514.75px;
-		top: 52.5px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Make_the_best_first_impression {
-		position: absolute;
-		left: 557px;
-		top: 248px;
-		overflow: visible;
-		width: 809px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 55px;
-		color: rgba(17,16,16,1);
-		letter-spacing: 0.1px;
-	}
-	#Check_Twitter_users_in_seconds {
-		position: absolute;
-		left: 497px;
-		top: 351px;
-		overflow: visible;
-		width: 929px;
-		white-space: nowrap;
-		line-height: 45px;
-		margin-top: -9px;
-		text-align: center;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 27px;
-		color: rgba(85,85,85,1);
-	}
-	#Group_6 {
-		position: absolute;
-		width: 122px;
-		height: 59px;
-		left: 1662px;
-		top: 27px;
-		overflow: visible;
-		--web-animation: fadein 0s snap;
-		--web-action-type: page;
-		--web-action-target: Sign_Up_1.html;
-		cursor: pointer;
-	}
-	.Rectangle_14 {
-		position: absolute;
-		overflow: visible;
-		width: 122px;
-		height: 59px;
-		left: 0px;
-		top: 0px;
-	}
-	#Sign_up {
-		position: absolute;
-		left: 26px;
-		top: 16px;
-		overflow: visible;
-		width: 77px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 21px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 0.1px;
-	}
-	#Group_8 {
-		position: absolute;
-		width: 963px;
-		height: 254px;
-		left: 479px;
-		top: 497px;
-		overflow: visible;
-	}
-	.Rectangle_15 {
-		filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.2));
-		position: absolute;
-		overflow: visible;
-		width: 999px;
-		height: 290px;
-		left: 0px;
-		top: 0px;
-	}
-	#Enter_a_username_or_url_to_lau {
-		position: absolute;
-		left: 55px;
-		top: 162px;
-		overflow: visible;
-		width: 623px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(85,85,85,1);
-		letter-spacing: 0.1px;
-	}
-	#Group_7 {
-		position: absolute;
-		width: 851px;
-		height: 76px;
-		left: 56px;
-		top: 56px;
-		overflow: visible;
-	}
-	.Rectangle_16 {
-		position: absolute;
-		overflow: visible;
-		width: 851px;
-		height: 76px;
+		width: 862px;
+		height: 591px;
 		left: 0px;
 		top: 0px;
 	}
 	.Rectangle_17 {
 		position: absolute;
 		overflow: visible;
-		width: 253px;
+		width: 674px;
 		height: 76px;
-		left: 598px;
-		top: 0px;
+		left: 93px;
+		top: 438px;
 		--web-animation: fadein 0s snap;
 		--web-action-type: page;
-		--web-action-target: Sign_In.html;
+		--web-action-target: Search_After_Login.html;
 		cursor: pointer;
 	}
-	#Search_Twitter {
+	#Continue {
 		position: absolute;
-		left: 650px;
-		top: 24px;
+		left: 383px;
+		top: 462px;
 		overflow: visible;
-		width: 150px;
+		width: 95px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: Open Sans;
@@ -233,96 +163,139 @@
 		color: rgba(255,255,255,1);
 		letter-spacing: 0.1px;
 	}
-	#_Coach_GrantJr {
-		position: absolute;
-		left: 75px;
-		top: 78px;
+	.Path_6 {
+		filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.161));
 		overflow: visible;
-		width: 178px;
+		position: absolute;
+		width: 703px;
+		height: 96px;
+		left: 94px;
+		top: 70px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_10 {
+		position: absolute;
+		width: 241px;
+		height: 36px;
+		left: 308px;
+		top: 85px;
+		overflow: visible;
+	}
+	#Sign_in_with_Twitter {
+		position: absolute;
+		left: 55px;
+		padding-top: 15px;
+		overflow: visible;
+		width: 187px;
 		white-space: nowrap;
-		text-align: left;
+		text-align: center;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(51,51,51,1);
+	}
+	#unnamed {
+		position: absolute;
+		padding-top: 15px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#OR {
+		position: absolute;
+		left: 420.5px;
+		top: 166px;
+		overflow: visible;
+		width: 21px;
+		white-space: nowrap;
+		text-align: center;
 		font-family: Open Sans;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 23px;
-		color: rgba(85,85,85,1);
-		letter-spacing: 0.1px;
-  }
-  /* Navigation */
-.navbar{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar-links ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-.navbar-links li{
-    list-style: none;
-}
-.navbar-links li a{
-    text-decoration: none;
-    color: #333;
-    padding: 1rem;
-    display: block;
-}
-.navbar-links li:hover {
-    background-color: #F0E9D7;
-}
-.toggle-button{
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
-@media (max-width: 672px) {
-    .toggle-button {
-        display:flex;
-    }
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar-links li {
-        text-align: center;
-    }
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar-links.active{
-        display:flex;
-    }
-}
-	#nav {
+		font-size: 15px;
+		color: rgba(191,191,191,1);
+	}
+	.Line_2 {
+		overflow: visible;
+		position: absolute;
+		width: 281px;
+		height: 1px;
+		left: 110px;
+		top: 175.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Line_3 {
+		overflow: visible;
+		position: absolute;
+		width: 281px;
+		height: 1px;
+		left: 470px;
+		top: 175.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_5 {
+		opacity: 0.43;
+	}
+	.Path_5 {
+		overflow: visible;
+		position: absolute;
+		width: 673px;
+		height: 66px;
+		left: 94px;
+		top: 342px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Password {
+		position: absolute;
+		left: 94px;
+		top: 309px;
+		overflow: visible;
+		width: 81px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(51,51,51,1);
+		letter-spacing: 0.05px;
+	}
+	#Path_10 {
+		opacity: 0.43;
+	}
+	.Path_10 {
+		overflow: visible;
+		position: absolute;
+		width: 673px;
+		height: 66px;
+		left: 95px;
+		top: 228px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Email_Username {
+		position: absolute;
+		left: 93px;
+		top: 195px;
+		overflow: visible;
+		width: 139px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(51,51,51,1);
+		letter-spacing: 0.05px;
+	}
+	#Component_29___7 {
 		position: absolute;
 		width: 562px;
 		height: 50px;
 		left: -179px;
 		top: 28px;
 		overflow: visible;
-  }
-  
-  
+	}
 	.Rectangle_18 {
 		position: absolute;
 		overflow: visible;
@@ -338,33 +311,6 @@
 		left: 311px;
 		top: 3px;
 		overflow: visible;
-	}
-	#Component_26___1 {
-		position: absolute;
-		width: 66px;
-		height: 28px;
-		left: 1548px;
-		top: 43px;
-		overflow: visible;
-	}
-	#Sign_in {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 67px;
-		white-space: nowrap;
-		--web-animation: fadein 0s snap;
-		--web-action-type: page;
-		--web-action-target: Sign_In.html;
-		cursor: pointer;
-		text-align: left;
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 21px;
-		color: rgba(85,85,85,1);
-		letter-spacing: 0.1px;
 	}
 </style>
 <script id="applicationScript">
@@ -2791,103 +2737,77 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Home">
-
-	<img id="Image_2" src="Image_2.png" srcset="Image_2.png 1x, Image_2@2x.png 2x">
-	<svg class="Rectangle_13">
-		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_13" rx="0" ry="0" x="0" y="0" width="1960" height="123">
-		</rect>
-	</svg>
-	<div id="Box" class="Box">
-		<svg class="Orig_rec">
-			<rect fill="rgba(255,255,255,1)" id="Orig_rec" rx="10" ry="10" x="0" y="0" width="1943" height="116">
-			</rect>
-		</svg>
+<div id="Sign_In">
+	<img id="Image_3" src="Image_3.png" srcset="Image_3.png 1x, Image_3@2x.png 2x">
+	<div id="Welcome_Back">
+		<span>Welcome Back</span>
 	</div>
-	<div id="Product">
-		<span>Product</span>
+	<div id="Don_t__have_an_account_">
+		<span>Don't  have an account?</span>
 	</div>
-	<div id="Pricing">
-		<span>Pricing</span>
+	<div onclick="application.goToTargetView(event)" id="Sign_up_">
+		<span>Sign up.</span>
 	</div>
-	<svg class="Path_4" viewBox="2596.75 55.5 11 4.5">
-		<path fill="transparent" stroke="rgba(112,112,112,1)" stroke-width="4px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_4" d="M 2596.75 55.5 L 2602.5 60 L 2607.75 55.5">
-		</path>
-	</svg>
-	<div id="Make_the_best_first_impression">
-		<span>Make the best first impression.</span>
+	<div id="Forgot_your_password_">
+		<span>Forgot your password?</span>
 	</div>
-	<div id="Check_Twitter_users_in_seconds">
-		<span>Check Twitter users in seconds for profanity. From vetting potential hires, <br/>to cleaning up your own social presence, use Impostible. </span>
-	</div>
-	<div onclick="application.goToTargetView(event)" id="Group_6">
-		<svg class="Rectangle_14">
-			<rect fill="rgba(109,218,211,1)" id="Rectangle_14" rx="11" ry="11" x="0" y="0" width="122" height="59">
-			</rect>
-		</svg>
-		<div id="Sign_up">
-			<span>Sign up</span>
-		</div>
-	</div>
-	<div id="Group_8">
-		<svg class="Rectangle_15">
-			<rect fill="rgba(255,255,255,1)" id="Rectangle_15" rx="16" ry="16" x="0" y="0" width="963" height="254">
-			</rect>
-		</svg>
-		<div id="Enter_a_username_or_url_to_lau">
-			<span>Enter a username or url to launch. For example, @Normaleellc</span>
-		</div>
-		<div id="Group_7">
-			<svg class="Rectangle_16">
-				<rect fill="rgba(255,255,255,1)" stroke="rgba(109,218,211,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_16" rx="13" ry="13" x="0" y="0" width="851" height="76">
+	<div id="Sign_in_box">
+		<div id="Box" class="Box">
+			<svg class="Orig_rec">
+				<rect fill="rgba(255,255,255,1)" id="Orig_rec" rx="10" ry="10" x="0" y="0" width="844" height="573">
 				</rect>
 			</svg>
-			<svg class="Rectangle_17">
-				<rect fill="rgba(109,218,211,1)" stroke="rgba(109,218,211,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" onclick="application.goToTargetView(event)" id="Rectangle_17" rx="13" ry="13" x="0" y="0" width="253" height="76">
-				</rect>
-			</svg>
-			<div id="Search_Twitter">
-				<span>Search Twitter</span>
+		</div>
+		<svg class="Rectangle_17">
+			<rect fill="rgba(109,218,211,1)" stroke="rgba(109,218,211,1)" stroke-width="5px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" onclick="application.goToTargetView(event)" id="Rectangle_17" rx="13" ry="13" x="0" y="0" width="674" height="76">
+			</rect>
+		</svg>
+		<div id="Continue">
+			<span>Continue</span>
+		</div>
+		<svg class="Path_6" viewBox="0 0 673 66">
+			<path fill="rgba(255,255,255,1)" id="Path_6" d="M 13 0 L 660 0 C 667.1796875 0 673 5.820297718048096 673 13 L 673 53 C 673 60.17970275878906 667.1796875 66 660 66 L 13 66 C 5.820297718048096 66 0 60.17970275878906 0 53 L 0 13 C 0 5.820297718048096 5.820297718048096 0 13 0 Z">
+			</path>
+		</svg>
+		<div id="Group_10">
+			<div id="Sign_in_with_Twitter">
+				<span>Sign in with Twitter</span>
 			</div>
+			<img id="unnamed" src="images/unnamed.png">
 		</div>
-		<div id="_Coach_GrantJr">
-			<span>@Coach_GrantJr</span>
+		<div id="OR">
+			<span>OR</span>
 		</div>
-  </div>
-
-  <nav id="nav" class="nav">
+		<svg class="Line_2" viewBox="0 0 281 1">
+			<path fill="transparent" stroke="rgba(191,191,191,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_2" d="M 0 0 L 281 0">
+			</path>
+		</svg>
+		<svg class="Line_3" viewBox="0 0 281 1">
+			<path fill="transparent" stroke="rgba(191,191,191,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_3" d="M 0 0 L 281 0">
+			</path>
+		</svg>
+		<svg class="Path_5" viewBox="0 0 673 66">
+			<path fill="rgba(255,255,255,1)" stroke="rgba(191,191,191,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_5" d="M 13 0 L 660 0 C 667.1796875 0 673 5.820297718048096 673 13 L 673 53 C 673 60.17970275878906 667.1796875 66 660 66 L 13 66 C 5.820297718048096 66 0 60.17970275878906 0 53 L 0 13 C 0 5.820297718048096 5.820297718048096 0 13 0 Z">
+			</path>
+		</svg>
+		<div id="Password">
+			<span>Password</span>
+		</div>
+		<svg class="Path_10" viewBox="0 0 673 66">
+			<path fill="rgba(255,255,255,1)" stroke="rgba(191,191,191,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_10" d="M 13 0 L 660 0 C 667.1796875 0 673 5.820297718048096 673 13 L 673 53 C 673 60.17970275878906 667.1796875 66 660 66 L 13 66 C 5.820297718048096 66 0 60.17970275878906 0 53 L 0 13 C 0 5.820297718048096 5.820297718048096 0 13 0 Z">
+			</path>
+		</svg>
+		<div id="Email_Username">
+			<span>Email/Username</span>
+		</div>
+	</div>
+	<div id="Component_29___7" class="Component_29___7">
 		<svg class="Rectangle_18">
 			<rect fill="rgba(19,34,53,1)" stroke="rgba(19,34,53,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_18" rx="25" ry="25" x="0" y="0" width="562" height="50">
 			</rect>
 		</svg>
 		<img id="Impostible_Logo_BUTTONStraight" src="images/logo.png">
-  </div>
-  <a href="#" class="toggle-button">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-</a>
-  <div class="navbar-links">
-    <ul>
-      <li>
-        <a href="">Garden Center</a>
-      </li>
-      <li>
-        <a href="">Services</a>
-      </li>
-      <li>
-        <a href="">Blog</a>
-      </li>
-      <li>
-        <div id="Component_26___1" class="Component_26___1">
-          <div onclick="application.goToTargetView(event)" id="Sign_in">
-            <span>Sign in</span>
-          </div>
-        </div>
-      </li>
-    </ul>
+	</div>
 </div>
-</nav>
-
 </body>
 </html>
